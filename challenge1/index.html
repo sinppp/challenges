@@ -1,21 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+
   <title>Article</title>
 </head>
 <body>
-
+<div id="box">
+	<img src="images/drawers.jpg" id="drawers">
+   <div id="top">
   Shift the overall look and feel by adding these wonderful 
   touches to furniture in your home
-
+	</div>
+	<div id="sub">
   Ever been in a room and felt like something was missing? Perhaps 
   it felt slightly bare and uninviting. I’ve got some simple tips 
   to help you make any room feel complete.
+  </div>
   
+  <img src="images/avatar-michelle.jpg" id="av">
+  <div id="mic">
+	<div id ="name">
+	Michelle Appleton
+	</div>
+	<div id ="date">
+	28 jun 2020
+	</div>
+	<div class="tooltip"> <img src="images/icon-share.svg" id="arrow" >
+    <span class="tooltiptext" id="links">S H A R E  <a href="https://www.facebook.com/search/top?q=michelle%20appleton">
+	<img src="images/icon-facebook.svg" id="fb"></a> <a href="https://twitter.com/search?q=michelle%20appleton&src=typed_query"><img src="images/icon-twitter.svg" id="twit"></a> 
+		 <a href="https://in.pinterest.com/"><img src="images/icon-pinterest.svg" id="pin"></a></span>
+	
+    </div>
+  
+</div>
+
+  <style>
+ @media only screen and (min-width: 768px) 
+  {
+  body{
+	background-color:#ECF2F8;
+	}
+	#box{
+	position: absolute;
+	background-color:white;
+    transform: translate(-50%, -50%);
+	height: 290px;
+	width: 790px;
+	top:50%;
+	left:50%;
+    font-size: 13px;
+    color:#1B2631;
+	border-radius:17px;
+	}
+	#top{
+	position: absolute;
+	top: 10%;
+	left:51%;
+	width:350px;
+	font-size: 20px;
+	font-family: 'Manrope', sans-serif;
+	color:#4E5765;
+	}
+	#sub{
+	position: absolute;
+	top: 46%;
+	left:51%;
+	width:350px;
+	font-family: 'Manrope', sans-serif;
+	font-size: 12px;
+	color: #949596;
+	
+	}
+
+	img{
+	border-top-left-radius:5%;
+	border-bottom-left-radius:5%;
+	border-top-right-radius:0;
+	}
+	#drawers{
+	height:290px;
+	}
+	
+	#av{
+	position: absolute;
+	top:73%;
+	left:53%;
+	border-radius:50%;
+	height:50px;
+	}
+	#mic{
+	position: absolute;
+	top: 74%;
+	left:61%;
+	
+	}
+	#name{
+		color:#4E5765;
+		font-family: 'Manrope', sans-serif;
+	}
+	#date{
+		color:#949596;
+		font-family: 'Manrope', sans-serif;
+	}
+
+	#arrow{
+			position: absolute;
+			top:-35px;
+			left: 200%;
+			background-color:#ECF2F8;
+			border-radius:50%;
+			padding:8px;
+			height:17px;
+		
+	}
+	#arrow:hover{
+			position: absolute;
+			background-color: #4E5765;
+
+	}
+	#fb{
+	position:absolute;
+	padding-left:18px;
+	}
+	#twit{
+	position:absolute;
+	padding-left:60px;
+	padding-top:2px;
+	}
+	#pin{
+	position:absolute;
+	padding-left:100px;
+	}
+	.tooltip {
+	  position: relative;
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  width: 200px;
+	  height:28px;
+	  background-color:  #4E5765;
+	  color:#9EAFC2;
+	  padding-left: 30px;
+	  padding-top:11px;
+	  padding-bottom:1px;
+	  border-radius: 6px;
+	  font-size:12px;
+	  font-family:arial;
+
+	  /* Position the tooltip text */
+	  position: absolute;
+	  z-index: 1;
+	  bottom:59px;
+	  left: 157%;
+	  margin-left: -60px;
+
+	  /* Fade in tooltip */
+	  opacity: 0;
+	  transition: opacity 0.3s;
+	}
+
+	/* Tooltip arrow */
+	.tooltip .tooltiptext::after {
+	  content: "";
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  width:0;
+	  height:88px;
+	  margin-left: -5px;
+	  border-width: 14px;
+	  border-height:23px;
+	  border-style: solid;
+	  border-color:  #4E5765 transparent transparent transparent;
+	}
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	  opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 768px) 
+  {
+  body{
+	background-color:#ECF2F8;
+	}
+	#box{
+	position: absolute;
+	background-color:white;
+    transform: translate(-50%, -50%);
+	height: 510px;
+	width: 290px;
+	top:50%;
+	left:50%;
+    font-size: 13px;
+    color:#1B2631;
+	border-radius:17px;
+	}
+	#top{
+	position: absolute;
+	top: 45%;
+	left:7%;
+	width:253px;
+	font-size: 16px;
+	font-family: 'Manrope', sans-serif;
+	color:#4E5765;
+	}
+	#sub{
+	position: absolute;
+	top: 60%;
+	left:7%;
+	width:200x;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13.3px;
+	color: #949596;
+	
+	}
+	#drawers{
+	border-top-left-radius:5%;
+	border-top-right-radius:5%;
+	width:290px;
+	height: 200px;
+	}
+	#mic{
+	position: absolute;
+	top: 88%;
+	left:36%;
+	}
+	#av{
+	position: absolute;
+	top:88%;
+	left:13%;
+	border-radius:50%;
+	height:40px;
+	}
+	#name{
+		color:#4E5765;
+		font-family: 'Manrope', sans-serif;
+	}
+	#date{
+		color:#949596;
+		font-family: 'Manrope', sans-serif;
+	}
+
+	#arrow{
+			position: absolute;
+			top:12px;
+			left: 110%;
+			background-color:#ECF2F8;
+			border-radius:50%;
+			padding:8px;
+			height:14px;
+		
+	}
+		#arrow:hover{
+			position: absolute;
+			top:12px;
+			left: 110%;
+			border-radius:50%;
+			padding:8px;
+			height:14px;
+			z-index: 10;
+ 
+
+	}
+	#fb{
+	position:absolute;
+	padding-left:18px;
+	}
+	#twit{
+	position:absolute;
+	padding-left:60px;
+	}
+	#pin{
+	position:absolute;
+	padding-left:100px;
+	}
+		.tooltip {
+	  position: absolute;
+	  left:120%;
+	  top:-10%;
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  width: 270px;
+	  height:33.5px;
+	  background-color:  #4E5765;
+	  color:#9EAFC2;
+	  padding-left:20px;
+	  padding-top:20px;
+	  padding-bottom:10px;
+	  border-radius: 6px;
+	  font-size:15px;
+	  font-family:arial;
+
+		 /* Position the tooltip text */
+	  position: absolute;
+	  z-index: 1;
+	  border-bottom-left-radius:17px;
+	  border-bottom-right-radius:17px;
+	  border-top-left-radius:0;
+	  border-top-right-radius:0;
+	  top:90%;
+	  left: 10%;
+	  margin-left: -240px;
+
+	  /* Fade in tooltip */
+	  opacity: 10;
+	  transition: opacity 0.3s;
+	}
+
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	  opacity: 1;
+	}
+
+}
+
+
+
+
+	
+</style>
 </body>
 </html>
