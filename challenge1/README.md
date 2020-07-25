@@ -1,7 +1,9 @@
 # CHALLENGE 1 - Article
 
-![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
-
+![Design preview for the Article preview component coding challenge](./design/screenshots/mobview1.jpg)
+![Design preview for the Article preview component coding challenge](./design/screenshots/mobview2.jpg)
+![Design preview for the Article preview component coding challenge](./design/screenshots/desktop1.jpg)
+![Design preview for the Article preview component coding challenge](./design/screenshots/desktop2.jpg)
 ## Welcome! 👋
 
 **To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
