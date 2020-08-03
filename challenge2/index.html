@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script src="main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+</style>
+
+    <title>Challenge 2 | Insure landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+	 @media only screen and (min-width: 768px) 
+	{
+	 .attribution {
+        font-size: 11px;
+        text-align: center;
+		position:absolute;
+		top:280%;
+		left:38%;
+      }
+      .attribution a {
+        color: #3e52a3;
+      }
+	  header{
+	  font-family: 'DM Serif Display', serif;
+	  padding-left:8%;
+	  padding-top:0.8%;
+	  font-size:18px;
+	  }
+	  h1:hover{
+	  font-weight:bold;
+	  }
+	  h2:hover{
+	  font-weight:bold;
+	  }
+	  h3:hover{
+	  font-weight:bold;
+	  }
+	  h1,h2,h3{
+	  font-size:14px;
+	  font-weight:normal;
+	  }
+	  h1{
+	  position:absolute;
+	  left:63%;
+	  top:2.2px;
+	  }
+	  h2{
+	  position:absolute;
+	  left:72%;
+	  top:0.5px;
+	  }
+	  h3{
+	  position:absolute;
+	  left:77%;
+	  top:-2px;
+	  }
+	  h4{
+	  position:absolute;
+	  text-align:center;
+	  font-size:14px;
+	  left:84%;
+	  top:-10px;
+	  background-color: white;
+	  width: 100px;
+	  border: 1px solid black;
+	  display: inline; 
+	  font-family:'Karla', sans-serif;
+	  font-weight:400;
+	  padding:5px;
+	  
+	}
+	 h4:hover{
+	 background-color: #2B272F;
+	 color:white;
+	 font-family:'Karla', sans-serif;
+	  font-weight:700;
+	}
+	#content{
+	  position:absolute;
+	  text-align:center;
+	  font-size:14px;
+	  left:0%;
+	  top:9%;
+	  background-color: #2D2640;
+	  width: 99.83%;
+	  height:75%;
+	  border: 1px solid black;
+
+	  display:inline-block;
+	  padding-left:0px;
+	}
+	#intro{
+	position:absolute;
+	top:17%;
+	left:57%;
+	width:32%;
+	}
+	#right{
+	position:absolute;
+	top:0;
+	right:0;
+	width:24%;
+	}
+	#left{
+	position:absolute;
+	top:67%;
+	left:0;
+	width:12.8%;
+	}
+	#head{
+	position:absolute;
+	display:block;
+	font-family: 'DM Serif Display', serif;
+	color:white;
+	font-size:45px;
+	top:18%;
+	text-align:left;
+	left:15%;
+	width: 28%;
+	}
+	#body{
+	position:absolute;
+	display:block;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	color:white;
+	font-size:15px;
+	opacity:80%;
+	top:48%;
+	text-align:left;
+	left:15%;
+	width: 41%;
+	line-height:27px;
+	
+	}
+	hr.line{
+	position:absolute;
+	top:14%;
+	left:15%;
+	width:9%;
+	border: 0.6px solid white
+	}
+	h5{
+	  position:absolute;
+	  text-align:center;
+	  font-size:13px;
+	  left:15%;
+	  top:68%;
+	  background-color: #2D2640;
+	  width: 100px;
+	  border: 1px solid white;
+	  display: inline; 
+	  padding:7px;
+	  color:white;
+	  font-family:'Karla', sans-serif;
+	  font-weight:400;
+	}
+	h5:hover{
+	background-color:white;
+	color:black;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	hr.line2{
+	position:absolute;
+	top:110%;
+	left:12%;
+	width:6.7%;
+	border: 0.6px solid #2D2640;
+	}
+	#diff{
+	position:absolute;
+	font-size:33px;
+	font-family: 'DM Serif Display', serif;
+	top:120%;
+	left:12%;
+	}
+	.snptext{
+	position:absolute;
+	font-size:14.8px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	top:150%;
+	width:26%;
+	left:12%;
+	color:#4B4949;
+	line-height:25px;
+	}
+	#snappy{
+	position:absolute;
+	top:133%;
+	height:11%;
+	left:12%;
+	}
+	#snphead{
+	font-size:20px;
+	padding-bottom:4.5%;
+	color:black;
+	font-family: 'DM Serif Display', serif;
+
+	}
+	.aftext{
+	position:absolute;
+	font-size:14.8px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	top:150%;
+	width:26%;
+	left:39%;
+	color:#4B4949;
+	line-height:25px;
+
+	}
+	#af{
+	position:absolute;
+	top:133%;
+	height:11%;
+	left:39%;
+	}
+	#afhead{
+	font-size:20px;
+	padding-bottom:4.5%;
+	color:black;
+	font-family: 'DM Serif Display', serif;
+	}
+	.pftext{
+	position:absolute;
+	font-size:14.8px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	top:150%;
+	width:26%;
+	left:67%;
+	color:#4B4949;
+	line-height:21px;
+	line-height:25px;
+
+	}
+	#pf{
+	position:absolute;
+	top:133%;
+	height:11%;
+	left:67%;
+	}
+	#pfhead{
+	font-size:20px;
+	padding-bottom:4.5%;
+	color:black;
+	font-family: 'DM Serif Display', serif;font-family: 'DM Serif Display', serif;
+	}
+	#find{
+	  position:absolute;
+	  text-align:center;
+	  font-size:14px;
+	  left:10%;
+	  top:180%;
+	  background-color: #2D2640;
+	  width: 80%;
+	  height:28%;
+	  border: 1px solid black;
+	  display:inline-block;
+	  padding-left:0px;
+	}
+	#findtext{
+	position:absolute;
+	text-align:left;
+	color:white;
+    top:15%;
+	left:6.5%;
+	width:36%;
+	font-size:38px;
+	font-family: 'DM Serif Display', serif;
+	}
+	#findpat{
+	position:absolute;
+	top:180;
+	left:71%;
+	width:29%;
+	}
+	 content{
+	  position:absolute;
+	  font-size:16px;
+	  text-align:center;;
+	  left:76%;
+	  top:40%;
+	  width:150px;
+	  background-color:transparent;
+	  border: 1px solid white;
+	  font-family:'Karla', sans-serif;
+	  font-weight:400;
+	  color:white;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	}
+	 content:hover{
+	 background-color: white;
+	 color:black;
+	 font-family:'Karla', sans-serif;
+	 font-weight:700;
+	}
+	footer{
+	  position:absolute;
+	  text-align:center;
+	  font-size:14px;
+	  left:0%;
+	  top:230%;
+	  background-color: #FAFAFA;
+	  width: 99.83%;
+	  height:40%;
+	  display:inline-block;
+	  padding-left:0px;
+	}
+	#logo{
+	position:absolute;
+	top:10%;
+	left:10%;
+	}
+	hr.line3{
+	position:absolute;
+	top:25%;
+	left:10%;
+	width:80%;
+	border: 0.6px solid black;
+	}
+	#footpat{
+	position:absolute;
+	left:0;
+	width:33%;
+	}
+	.fblogo{
+	position:absolute;
+	top:10%;
+	left:79%;
+	fill:#837D88;
+	}
+	.fblogo:hover{
+	fill:black;
+	}
+	.twlogo{
+	position:absolute;
+	top:11%;
+	left:82%;
+	fill:#837D88;
+	}
+	.twlogo:hover{
+	fill:black;
+	}
+	.pinlogo{
+	position:absolute;
+	top:10%;
+	left:85%;
+	fill:#837D88;
+	}
+	.pinlogo:hover{
+	fill:black;
+	}
+	.instalogo{
+	position:absolute;
+	top:10%;
+	left:88%;
+	fill:#837D88;
+	}
+	.instalogo:hover{
+	fill:black;
+	}
+	#main1{
+	position:absolute;
+	top:38%;
+	left:10%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	}
+	#sub1{
+	position:absolute;
+	top:48%;
+	left:10%;
+	text-align:left;
+	font-size:14.1px;
+	color: #512E5F ;
+	line-height:13px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#main2{
+	position:absolute;
+	top:38%;
+	left:29%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	}
+	#sub2{
+	position:absolute;
+	top:48%;
+	left:29%;
+	text-align:left;
+	font-size:14.1px;
+	color: #512E5F ;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	line-height:13px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#main3{
+	position:absolute;
+	top:38%;
+	left:50%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	}
+	#sub3{
+	position:absolute;
+	top:48%;
+	left:50%;
+	text-align:left;
+	font-size:14.1px;
+	color: #512E5F ;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	line-height:13px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#main4{
+	position:absolute;
+	top:38%;
+	left:70%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	}
+	#sub4{
+	position:absolute;
+	top:48%;
+	left:70%;
+	text-align:left;
+	font-size:14.1px;
+	color: #512E5F ;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	line-height:13px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	p:hover{
+	text-decoration:underline;
+	}
+	#toggle,#intro1,#head1,#body1,#left1,#right1,#howwe,#howwetext,#howweicon,#mobfoot{
+	display:none;
+	}
+
+ }
+@media only screen and (max-width: 768px) 
+{
+	.attribution {
+        font-size: 11px;
+        text-align: center;
+		position:absolute;
+		top:663%;
+		left:20%;
+      }
+      .attribution a {
+        color: #3e52a3;
+      }
+	body{
+	width:50%;
+	color:w;
+	}
+	#logo1{
+	position:absolute;
+	top:6%;
+	left:12%;
+	}
+	#intro1{
+	position:absolute;
+	top:14%;
+	left:0;
+	width:100%
+	}
+	h1,h2,h3,h4,#intro,hr.line,#left,#right,#find,#footpat,#top,hr.line3,footer{
+	display:none;
+	}
+
+	#head,#body{
+	display:none;
+	}
+	#mobcon{
+	position:absolute;
+	top:112%;
+	width:100%;
+	left:0;
+	height:99%;
+	background-color: #2D2640;
+	}
+	#head1{
+	position:absolute;
+	text-align:center;
+	font-family: 'DM Serif Display', serif;
+	color:white;
+	font-size:340%;
+	top:19%;
+	left:10%;
+	width:80%;
+	}
+	#body1{
+	position:absolute;
+	text-align:center;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	color:white;
+	font-size:100%;
+	opacity:80%;
+	top:50%;
+	left:7%;
+	line-height:27px;
+	width:80%;
+	}
+	h5{
+	  position:absolute;
+	  text-align:center;
+	  font-size:12.2px;
+	  left:36%;
+	  top:187%;
+	  background-color: #2D2640;
+	  width: 100px;
+	  border: 1px solid white;
+	  display: inline; 
+	  padding:7px;
+	  color:white;
+	  font-family:'Karla', sans-serif;
+	  font-weight:400;
+	}
+	h5:hover{
+	background-color:white;
+	color:black;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#right1{
+	position:absolute;
+	top:64%;
+	right:0;
+	width:35%;
+	}
+	#left1{
+	position:absolute;
+	top:0;
+	left:0;
+	width:48%;
+	}
+	hr.line2{
+	position:absolute;
+	top:240%;
+	left:33%;
+	width:30%;
+	border: 0.6px solid #95A9C6;
+	}
+	#diff{
+	position:absolute;
+	top:250%;
+	left:20%;
+	font-family: 'DM Serif Display', serif;
+	font-size:260%;
+	display:inline
+	}
+	.snptext{
+	position:absolute;
+	font-size:14.8px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	text-align:center;
+	top:293%;
+	left:12%;
+	color:#4B4949;
+	line-height:25px;
+	width:70%;
+	}
+	#snappy{
+	position:absolute;
+	top:267%;
+	height:13%;
+	left:40%;
+	}
+	#snphead{
+	position:absolute;
+	font-size:150%;
+	padding-bottom:10px;;
+	color:black;
+	left:27%;
+	bottom:99%;
+	font-family: 'DM Serif Display', serif;
+
+	}
+	.aftext{
+	position:absolute;
+	font-size:14.8px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	text-align:center;
+	top:339%;
+	left:12%;
+	color:#4B4949;
+	line-height:25px;
+	width:70%;
+
+	}
+	#af{
+	position:absolute;
+	top:314%;
+	height:13%;
+	left:39%;
+	}
+	#afhead{
+    position:absolute;
+	font-size:150%;
+	padding-bottom:10px;;
+	color:black;
+	left:24%;
+	bottom:99%;
+	font-family: 'DM Serif Display', serif;
+	}
+	.pftext{
+    position:absolute;
+	font-size:14.8px;
+	font-family:'Karla', sans-serif;
+	font-weight:400;
+	text-align:center;
+	top:389%;
+	left:11.3%;
+	color:#4B4949;
+	line-height:25px;
+
+	}
+	#pf{
+	position:absolute;
+	top:359%;
+	height:13%;
+	left:40%;
+	}
+	#pfhead{
+    position:absolute;
+	font-size:150%;
+	padding-bottom:10px;;
+	color:black;
+	left:28%;
+	bottom:99%;
+	font-family: 'DM Serif Display', serif;
+	}
+	#find1{
+	position:absolute;
+	top:416.6%;
+	width:80%;
+	left:10%;
+	height:64%;
+	background-color: #2D2640;
+	}
+	#howwe{
+	position:absolute;
+	top:0;
+	height:94%;
+	right:0;
+	}
+	#howwetext{
+    position:absolute;
+	top:20%;
+	text-align:center;
+	left:20%;
+	font-family: 'DM Serif Display', serif;
+	color:white;
+	font-size:250%;
+	}
+	#howweicon{
+	  position:absolute;
+	  text-align:center;
+	  font-size:13px;
+	  left:35%;
+	  top:75%;
+	  background-color: #2D2640;
+	  width: 100px;
+	  border: 1px solid white;
+	  display: inline; 
+	  padding:7px;
+	  color:white;
+	  font-family:'Karla', sans-serif;
+	  font-weight:400;
+	}
+	#howweicon:hover{
+	background-color:white;
+	color:black;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#mobfoot{
+	position:absolute;
+	top:490%;
+	width:100%;
+	left:0;
+	height:180%;
+	background-color:#FAFAFA;
+	}
+	#logomob{
+	position:absolute;
+	top:12%;
+	left:38%;
+	}
+	hr.line4{
+	position:absolute;
+	top:22%;
+	left:7%;
+	width:86%;
+	border: 0.6px solid silver;
+	}
+	#fbm{
+	position:absolute;
+	top:16.7%;
+	left:33%;
+	}
+	#twm{
+	position:absolute;
+	top:16.7%;
+	left:42.5%;
+	}
+	#pinm{
+	position:absolute;
+	top:16.7%;
+	left:52%;
+	}
+	#instam{
+	position:absolute;
+	top:16.7%;
+	left:61.5%;
+	}
+	#mobfootpat{
+	position:absolute;
+	width:100%;
+	}
+	#main5{
+	position:absolute;
+	top:28%;
+	left:38%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#sub5{
+	position:absolute;
+	top:31%;
+	left:38%;
+	text-align:center;
+	font-size:14.1px;
+	color: black;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	line-height:13px;
+	}
+	#main6{
+	position:absolute;
+	top:46%;
+	left:41%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#sub6{
+	position:absolute;
+	top:49%;
+	left:38%;
+	text-align:center;
+	font-size:14.1px;
+	color: black;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	line-height:13px;
+	}
+	#main7{
+	position:absolute;
+	top:64.7%;
+	left:39%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#sub7{
+	position:absolute;
+	top:67%;
+	left:39.8%;
+	text-align:center;
+	font-size:14.1px;
+	color: black;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	line-height:13px;
+	}
+	#main8{
+	position:absolute;
+	top:81.7%;
+	left:39.9%;
+	font-size:14px;
+	color:#837D87;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	}
+	#sub8{
+	position:absolute;
+	top:84%;
+	left:39%;
+	text-align:center;
+	font-size:14.1px;
+	color: black;
+	line-height:20px;
+	font-family:'Karla', sans-serif;
+	font-weight:700;
+	line-height:13px;
+	}
+	p:hover{
+	text-decoration:underline;
+	}
+	div.navbar .hamburger
+            {
+                  background-color: transparent;
+                  border: 0px;
+                  padding: 0;
+                  cursor: pointer;
+                  display: flex;
+				  
+            }
+            .open,.close
+            {
+                  position: absolute;
+                  top: 3.5%;
+                  right: 5%;
+            }
+            div .hamburger .close
+            {
+                  display: none;
+            }
+            div .hamburger.show .open
+            {
+                  display: none;
+            }
+            div .hamburger.show .close
+            {
+                  display: block;
+            }
+            div ul.show
+            {
+                  background-color: #2b272f;
+                  display: flex;
+                  flex-direction: column;
+                  position: fixed;
+                  margin: 0;
+                  top: 12%;
+                  left: 0;
+                  height: 110vh;
+                  width: 100vw;
+                  z-index: 10;
+                  background-repeat: no-repeat;
+                  background-position: bottom left;
+                  background-size: 100% 38%;
+                  position: absolute;
+                  text-align: center;
+				  
+                  
+            }
+            div ul
+            {
+                  display: none;
+            }
+            .togglemenu
+            {
+                  text-decoration: none;
+                  text-align: center;
+                  font-family: karla;
+                  font-size: 110%; 
+                  padding-top: 40px;
+                  color: white;
+				  font-family:'Karla', sans-serif;
+				  font-weight:400;
+            }
+            .togglemenu:hover
+            {
+                  color: black;
+            }
+            #togglebox
+            {
+                  font-size: 110%;
+                  border: solid;
+                  border-color: white;
+                  padding: 10px;
+                  padding-right: 130px;
+                  padding-left: 130px;
+                  letter-spacing: 3px;
+                  color: white;
+                  text-decoration: none;
+                  font-family:'Karla', sans-serif;
+	              font-weight:400;
+                  text-align: center;
+            }
+            #togglebox:hover
+            {
+                  color: black;
+                  background-color: white;
+            }
+            #navimage
+            {
+                  position: absolute;
+                  left: 0%;
+                  bottom: 0%;
+                  width: 100%;
+            }
+            #tog
+            {
+                  position: absolute;
+                  left: 5%;
+                  line-height: 2;
+                  top: 5%;
+            }
+            p:nth-child(4)
+            {
+                  margin-top: 10%;
+            }
+          }
+}
+    </style>
+  </head>
+  <body>
+  <header>
+   <img src="images/logo.svg" id="logo1">
+   <div id="mobile">
+   <button class="hamburger" id="toggle">
+                        <img class="open" src="images/icon-hamburger.svg">
+                        <img class="close" src="images/icon-close.svg">
+                  </button>
+                  <ul id="menu">
+                        <div id="tog">
+                              <p><a class="togglemenu" href="">HOW WE WORK</a></p>
+                              <p><a class="togglemenu" href="">BLOG</a></p>
+                              <p><a class="togglemenu" href="">ACCOUNT</a></p>
+                              <p><a id="togglebox" href="">VIEW PLANS</a></p>
+                        </div>
+                        <img id="navimage" src="images/bg-pattern-mobile-nav.svg">
+                  </ul>
+            </div>
+   <div id="top">
+   <h1>How we work</h1> <h2>Blog</h2> <h3>Account</h3> <h4>View plans</h4>
+   </div>
+  </header>
+  <div id="content">
+  <hr class="line">
+  <div id="head">
+    Humanizing your insurance.
+	</div>
+	<div id="body">
+	Get your life
+    insurance coverage easier and faster. We blend our expertise and technology
+    to help you find the plan that’s right for you. Ensure you and your loved
+    ones are protected.
+	</div>
+	<img src="images/image-intro-desktop.jpg" id="intro">
+	<img src="images/image-intro-mobile.jpg" id="intro1">
+	<div id ="mobcon">
+	<img src ="images/bg-pattern-intro-left-mobile.svg" id="left1">
+	<img src="images/bg-pattern-intro-right-mobile.svg" id="right1">
+	<div id="head1">
+    Humanizing <br>your insurance.
+	</div>
+	<div id="body1">
+Get your life
+    insurance coverage easier and <br> faster. We blend our expertise and <br>technology
+    to help you find the plan that’s<br> right for you. Ensure you and your loved<br>
+    ones are protected.
+	</div>
+	</div>
+	<img src="images/bg-pattern-intro-right-desktop.svg" id="right">
+	<img src="images/bg-pattern-intro-left-desktop.svg" id="left">
+	 <h5>VIEW PLANS	</h5>
+	</div>
+	<div id="two">
+	  <hr class="line2">
+	<div id="diff"> We’re different</div>
+	<img src="images/icon-snappy-process.svg" id ="snappy">
+	<div class="snptext">
+		<div id="snphead"> Snappy Process</div>
+	Our application process can be completed in minutes, not hours. Don’t get stuck
+    filling in tedious forms.
+	</div>
+	</div>
+	<img src="images/icon-affordable-prices.svg" id="af">
+	<div class="aftext">
+		<div id="afhead">Affordable Prices</div>
+	We don’t want you worrying about
+    high monthly costs. Our prices may be low, but we still offer the best
+    coverage possible.
+	</div>
+	</div>
+	<img src="images/icon-people-first.svg" id="pf">
+	<div class="pftext">
+		<div id="pfhead">People First</div>
+	 Our plans aren’t full of conditions and
+    clauses to prevent payouts. We make sure you’re covered when you need it.
+	</div>
+	</div>
+	<div id ="find1">
+	<img src="images/bg-pattern-how-we-work-mobile.svg" id="howwe">
+	<div id="howwetext">Find out more<br> about how we<br> work</div>	
+	<div id="howweicon"> How We Work</div>
+	</div>
+	<div id="find">
+	<img src="images/bg-pattern-how-we-work-desktop.svg" id="findpat">
+	<div id ="findtext">Find out more <br>about how we work </div>
+	<content>How We Work</content>
+	</div>
+	<div id="mobfoot">
+	<img src="images/logo.svg" id="logomob">
+	<img src="images/bg-pattern-footer-mobile.svg"id="mobfootpat">
+	<img src="images/icon-facebook.svg" id="fbm">
+	<img src="images/icon-twitter.svg" id="twm">
+	<img src="images/icon-pinterest.svg" id="pinm">
+	<img src="images/icon-instagram.svg" id="instam">
+	<hr class="line4">
+	<div id="main5">OUR COMPANY</div>
+	<div id="sub5">
+	<p>How We Work </p><p>Why
+    Insure? </p><p>View Plans<p> Reviews</p>
+	</div>
+	<div id="main6">HELP ME</div>
+	<div id="sub6">
+	<p>FAQ </p><p>Terms Of Use</p><p> Privacy Policy </p><p>Cookies</p>
+	</div>
+	<div id="main7">CONTACT</div>
+	<div id="sub7">
+	<p> Sales </p><p>Support </p><p>Live Chat</p>
+	</div>
+	<div id="main8">OTHERS</div>
+	<div id="sub8">
+	 <p>Careers</p><p> Press </p><p>Licenses</p>
+	</div>
+	</div>
+	</div>
+	<footer>
+	<img src="images/bg-pattern-footer-desktop.svg" id="footpat">
+	<img src="images/logo.svg" id="logo">
+	<hr class="line3">
+
+	<a class="fblogo" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="fblogo">
+<path  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099
+ 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
+	<a class="twlogo" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0
+ 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 
+ 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 
+ 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/></svg></a>
+<a class="pinlogo" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418
+ 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></a>
+<a class="instalogo" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919
+ 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12
+ 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+	<div id="main1">OUR COMPANY</div>
+	<div id="sub1">
+	<p>How We Work </p><p> Why
+    Insure?</p><p>View Plans</p><p> Reviews</p>
+	</div>
+	<div id="main2">HELP ME</div>
+	<div id="sub2">
+	<p>FAQ</p><p> Terms Of Use</p><p> Privacy Policy </p><p>Cookies</p>
+	</div>
+	<div id="main3">CONTACT</div>
+	<div id="sub3">
+	<p> Sales </p><p>Support </p><p>Live Chat</p>
+	</div>
+	<div id="main4">OTHERS</div>
+	<div id="sub4">
+	 <p>Careers</p><p>Press</p><p>Licenses</p>
+	</div>
+	</div>
+	</footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sindhu Panthangi</a>.
+    </div>
+  </body>
+</html>
